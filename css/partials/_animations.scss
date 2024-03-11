@@ -22,8 +22,8 @@ $height-card: 0.64 * $width-card;
   background-size: cover;
   
 
-  animation: flip-card 10s linear infinite alternate,
-  change-card 10s linear infinite alternate;
+  animation: flip-card 10s linear 5s infinite alternate,
+  change-card 10s linear 5s infinite alternate;
 }
 
 @keyframes flip-card {
