@@ -66,3 +66,17 @@ const showMenu = (toggleId, navId) => {
 }
 
 showMenu('bx', 'menu-mobile')
+
+// ACCORDION
+document.querySelectorAll('.accordion-button').forEach((button) => {
+  button.addEventListener('click', () => {
+    const accordionContent = button.nextElementSibling
+    accordionContent.classList.toggle('active')
+    console.log(accordionContent)
+    if(accordionContent.classList.contains('active')){
+      accordionContent.style.height = accordionContent.scrollHeight + 'px'
+    } else {
+      accordionContent.style.height = 0
+    }
+  })
+})

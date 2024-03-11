@@ -173,15 +173,21 @@ $container-s: 540px;
 .list-item {
   list-style: none;
   position: relative;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   left: -8px;
   padding: 8px 8px 8px 72px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
+
+  display: block;
+  
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
 
     width: 64px;
@@ -302,4 +308,74 @@ footer .footer-social-media{
 
 .border-top {
   border-top: 1px solid $secondary-light;
+}
+
+.acordion {
+  margin-left: 32px;
+}
+
+.accordion-button {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: start;
+}
+
+.baixe-app {
+  margin-left: 32px;
+}
+
+
+@media(max-width: 960px) {
+  footer {
+    .list {
+      display: flex;
+      flex-direction: column;
+      height: 0;
+      overflow: hidden;
+      transition: .3s ease;
+    }
+  }
+
+  .baixe-app {
+    margin-left: 0px;
+  }
+
+  .baixe-app > div{
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+
+    svg {
+      width: 168px;
+      margin-left: 0;
+    }
+  }
+
+  .accordion-button {
+    cursor: pointer;
+  }
+
+  .acordion {
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    ::after {
+      content: "";
+      background-image: url('../../svg/chevron.svg');
+      width: 12px;
+      height: 8px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      // transform: rotate(-180deg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .container-footer-midias {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
 }
