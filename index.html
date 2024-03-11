@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="./js/svg-inject.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Nubank</title>
   </head>
   <body>
@@ -32,7 +33,7 @@
       </nav>
 
       <!-- ========== NAVBAR DESKTOP =========== -->
-      <nav class="navbar-desktop">
+      <nav class="navbar-desktop" data-aos="fade-up">
         <div class="navbar-desktop-item-1">
           <div class="logo">
             <a href="#">
@@ -156,7 +157,7 @@
         onload="SVGInject(this)"
       />
     </div>
-    <main class="container hero py-5">
+    <main class="container hero" data-aos="fade-up" data-aos-delay="200">
       <div class="flex-item-1 py-3">
         <h1>Ser Nubank é reinventar sua vida financeira.</h1>
         <p class="my-2">
@@ -181,7 +182,11 @@
           /></a>
         </div>
       </div>
-      <div class="flex-item-3 flex-center div-card py-4">
+      <div
+        class="flex-item-3 flex-center div-card py-4"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <img
           src="./svg/icon-card.svg"
           class="icon-card-hero dropshadow"
@@ -205,7 +210,11 @@
     </main>
     <!-- ========== SECTION PEOPLE =========== -->
     <section class="container">
-      <div class="flex-item-4 flex-column">
+      <div
+        class="flex-item-4 flex-column"
+        data-aos="fade-up"
+        data-aos-delay="0"
+      >
         <h5>Para todos</h5>
         <h2 class="mt-2">completo.</h2>
         <p class="my-2">
@@ -232,10 +241,14 @@
           <a href="#" class="link">Confira os benefícios</a>
         </p>
       </div>
-      <div class="flex-item-3 mx-2">
+      <div class="flex-item-3 mx-2" data-aos="fade-up" data-aos-delay="200">
         <img src="./svg/svg-people1.svg" alt="" onload="SVGInject(this)" />
       </div>
-      <div class="flex-item-1 flex-column mx-2 my-3">
+      <div
+        class="flex-item-1 flex-column mx-2 my-3"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <img
           id="people2"
           class="mx-2 my-2"
@@ -253,7 +266,12 @@
     </section>
     <!-- ========== SECTION BEST =========== -->
     <section class="container">
-      <div class="best px-3 py-4">
+      <div
+        class="best px-3 py-4"
+        data-aos="zoom-in-up"
+        data-aos-delay="0"
+        data-aos-anchor-placement="top-center"
+      >
         <div class="flex-item-auto">
           <h5>o melhor</h5>
           <h2>Por que Nubank?</h2>
@@ -301,10 +319,20 @@
     </section>
     <!-- ========== SECTION DIGITAL ACCOUNT =========== -->
     <section class="container">
-      <div class="flex-item-1 p-4">
+      <div
+        class="flex-item-1 p-4"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-anchor-placement="top-center"
+      >
         <img src="./svg/fignu2.svg" alt="" onload="SVGInject(this)" />
       </div>
-      <div class="flex-item-1">
+      <div
+        class="flex-item-1"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-anchor-placement="top-center"
+      >
         <h5>Conta digital</h5>
         <h2 class="mt-2">Tudo pelo App.</h2>
         <p class="my-2">
@@ -338,7 +366,12 @@
     </section>
 
     <!-- ========== SECTION CARD =========== -->
-    <section class="container">
+    <section
+      class="container"
+      data-aos="fade-right"
+      data-aos-delay="0"
+      data-aos-anchor-placement="top-center"
+    >
       <div class="flex-item-1">
         <h5>Seu roxinho</h5>
         <h2 class="mt-2">Crédito e débito.</h2>
@@ -365,17 +398,32 @@
         </ul>
         <div><a href="#" class="link">Saiba mais</a></div>
       </div>
-      <div class="flex-item-1 p-3">
+      <div
+        class="flex-item-1 p-3"
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-anchor-placement="top-center"
+      >
         <img src="./svg/fignu3.svg" alt="" onload="SVGInject(this)" />
       </div>
     </section>
 
     <!-- ========== SECTION SLIDER =========== -->
-    <section class="box">
+    <section
+      class="box"
+      data-aos="fade-right"
+      data-aos-delay="0"
+      data-aos-anchor-placement="top-center"
+    >
       <h5>Depoimentos</h5>
       <h2>Todos amam o roxinho</h2>
     </section>
-    <section class="container-swiper">
+    <section
+      class="container-swiper"
+      data-aos="fade-right"
+      data-aos-delay="200"
+      data-aos-anchor-placement="top-center"
+    >
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -435,7 +483,12 @@
 
     <!-- ========== SECTION NUBANK =========== -->
     <section class="container">
-      <div class="flex-item-1">
+      <div
+        class="flex-item-1"
+        data-aos="fade-right"
+        data-aos-delay="0"
+        data-aos-anchor-placement="top-center"
+      >
         <h5>Faça sua conta</h5>
         <h2 class="mt-2">Baixe. É gratuito.</h2>
         <p class="my-2">
@@ -462,13 +515,18 @@
           </a>
         </div>
       </div>
-      <div class="flex-item-1 p-3">
+      <div
+        class="flex-item-1 p-3"
+        data-aos="flip-right"
+        data-aos-delay="200"
+        data-aos-anchor-placement="top-center"
+      >
         <img src="./svg/fignu4.svg" alt="" onload="SVGInject(this)" />
       </div>
     </section>
 
     <!-- ========== SECTION INVITE =========== -->
-    <div class="relative border bg-invite flex-center">
+    <div class="relative bg-invite flex-center">
       <img
         class="svg-invite"
         src="./svg/fignu5.svg"
@@ -477,7 +535,12 @@
       />
 
       <section class="container">
-        <div class="flex-item-1 flex-center flex-column">
+        <div
+          class="flex-item-1 flex-center flex-column"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-anchor-placement="top-center"
+        >
           <h5>NUCONTA</h5>
           <h2 class="mt-2 text-center">
             O melhor dos bancos digitais. Pra você.
@@ -496,13 +559,127 @@
         </div>
       </section>
     </div>
+    <!-- ========== FOOTER =========== -->
+    <footer>
+      <section class="container flex-start links-footer">
+        <div>
+          <h4 class="color-white weight-light">Nubank</h4>
+          <ul class="list">
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Imprensa</a></li>
+          </ul>
+        </div>
+        <div class="ml-4">
+          <h4 class="color-white weight-light">Produtos</h4>
+          <ul class="list">
+            <li><a href="#">Conta Digital</a></li>
+            <li><a href="#">Cartão de crédito</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">Empréstimo</a></li>
+            <li><a href="#">Conta PJ</a></li>
+          </ul>
+        </div>
+        <div class="ml-4">
+          <h4 class="color-white weight-light">Fale conosco</h4>
+          <ul class="list">
+            <li><a href="#">0800 608 6236</a></li>
+            <li><a href="#">meajuda@nubank.com.br</a></li>
+            <li><a href="#">Atendimento 24h</a></li>
+          </ul>
+        </div>
+
+        <div class="ml-4">
+          <h4 class="color-white weight-light">Explore mais</h4>
+          <ul class="list">
+            <li><a href="#">Comunidade</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+        <div class="ml-4">
+          <h4 class="color-white weight-light">Baixe o App</h4>
+          <div class="flex-start">
+            <a href="#">
+              <img
+                class="w-auto button-app"
+                src="./svg/app-store.svg"
+                alt=""
+                onload="SVGInject(this)"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="w-auto ml-2 button-app"
+                src="./svg/google-play.svg"
+                alt=""
+                onload="SVGInject(this)"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="container py-3 border-top">
+        <div class="flex-between w-100">
+          <div class="flex-start">
+            <img
+              src="./svg/logonu-white.svg"
+              alt=""
+              onload="SVGInject(this)"
+              style="max-width: 96px"
+            />
+            <p class="color-white ml-2">
+              Nu Pagamentos S.A. 18.236.120/0001-58 <br />Rua Capote Valente, 39
+              - São Paulo, SP - 05409-000
+            </p>
+          </div>
+
+          <div class="flex-start footer-social-media">
+            <a href="#">
+              <img
+                src="./svg/icon-facebook.svg"
+                alt=""
+                onload="SVGInject(this)"
+              />
+            </a>
+            <a href="">
+              <img
+                src="./svg/icon-youtube.svg"
+                alt=""
+                onload="SVGInject(this)"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./svg/icon-instagram.svg"
+                alt=""
+                onload="SVGInject(this)"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./svg/icon-twitter.svg"
+                alt=""
+                onload="SVGInject(this)"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
     <!-- ========== JS =========== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       var swiper = new Swiper(".swiper", {
         slidesPerView: "auto",
-        // spaceBeteween: 40,
+        spaceBeteween: 40,
         grabCursor: true,
         pagination: {
           el: ".swiper-pagination",
@@ -513,6 +690,11 @@
           nextEl: ".button-next",
           prevEl: ".button-prev",
         },
+      });
+      AOS.init({
+        easing: "ease-out-quart",
+        durarion: 1000,
+        once: true,
       });
     </script>
   </body>

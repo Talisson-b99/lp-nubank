@@ -13,10 +13,14 @@ svg, img {
   border: 1px solid red;
 }
 
+.color-white {
+  color: #fefbff;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 96px 24px;
+  padding: 64px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +43,12 @@ svg, img {
 .flex-center {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -204,6 +214,46 @@ svg, img {
   overflow: hidden;
 }
 
+footer {
+  background-image: linear-gradient(220deg, #a950c4 14.43%, #82269e 85.28%);
+}
+footer .links-footer {
+  align-items: flex-start;
+}
+footer .links-footer h4 {
+  margin-bottom: 32px;
+}
+
+.list {
+  list-style: none;
+}
+.list li {
+  margin-bottom: 12px;
+}
+.list a {
+  color: #bb71d2;
+  transition: 0.3s ease;
+}
+.list a:hover {
+  opacity: 0.6;
+}
+
+footer .footer-social-media a {
+  cursor: pointer;
+}
+footer .footer-social-media svg {
+  width: 48px;
+  margin-left: 32px;
+  padding: 8px;
+}
+footer .footer-social-media svg path {
+  stroke: #fefbff;
+}
+
+.border-top {
+  border-top: 1px solid #bb71d2;
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -312,6 +362,10 @@ strong {
 
 .text-center {
   text-align: center;
+}
+
+.weight-light {
+  font-weight: 300;
 }
 
 .s-0 {
@@ -802,6 +856,8 @@ header {
 .active-bx::after {
   content: "";
   position: absolute;
+  top: 50%;
+  left: 16%;
   transform: rotate(-135deg);
   background-color: #82269e;
   transition: all 0.5s ease;
@@ -809,6 +865,8 @@ header {
 .active-bx::before {
   content: "";
   position: absolute;
+  top: 50%;
+  left: 16%;
   transform: rotate(315deg);
   background-color: #82269e;
   transition: all 0.5s ease;

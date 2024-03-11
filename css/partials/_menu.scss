@@ -226,6 +226,8 @@ header {
   &::after {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 16%;
     transform: rotate(-135deg);
     background-color: $primary-normal;
     transition: all .5s ease;
@@ -234,6 +236,8 @@ header {
   &::before {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 16%;
     transform: rotate(315deg);
 
     background-color: $primary-normal;
